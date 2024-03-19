@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+<a-camera>
+<a-cursor></a-cursor>
+</a-camera> 
+
+        <a-sky src="https://images.pexels.com/photos/127753/pexels-photo-127753.jpeg">
+   </a-sky>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" src="https://hips.hearstapps.com/hmg-prod/images/delish-230502-06-fried-chicken-0887-eb-index-645ec6fb0ca64.jpg?crop=0.888888888888889xw:1xh;center,top&resize=1200:*"
+   animation ="
+      property: position;
+      to: -2 2 10;
+      for: 5000;
+      loop: true;
+      dir: alternate;">
+</a-box>
+
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"
+  animation ="
+      property: position;
+      to: 0 3 -5;
+      for: 1000;
+      loop: true;
+      dir: alternate;
+      startEvents: click;
+"></a-sphere>
+
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" rotation="90" src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2022-10/bananas-mc-221004-02-3ddd88.jpg"
+  animation ="
+	property: rotation;
+	from: 0 15 0;
+	to: 0 15 100;
+	for: 200;
+	loop: true;
+	dir: alternate;
+	startEvents: click;
+"></a-cylinder>
+
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" src="https://t3.ftcdn.net/jpg/03/03/58/86/360_F_303588619_5W7RsXeZsNGEkpRYuK3EF1g1sEyAYdwU.jpg"
+  animation ="
+    property: position;
+    to: 0 -10 0;
+    for: 2500;
+    loop: true;
+    dir: alternate:
+    startEvents: click;
+"></a-plane>
+     
+    </a-scene>
+  </body>
+</html>
