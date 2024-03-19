@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+      <a-camera>
+      <a-cursor></a-cursor>
+      </a-camera>
+
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"
+	animation="
+	property: position;
+	from: -1 0.5 -3;
+	to: -1 -100 -3;
+	dur: 5000;
+	startEvents: click;
+	"
+	animation_2="
+	property: position;
+	from: -1 -100 -3;
+	to: -1 0.5 -3;
+	dur: 1000;
+	startEvents: afteranimation;
+	"
+	></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"
+	animation="
+	property: position;
+	from: 0 1.25 -5;
+	to: 0 -100 -5;
+	dur: 5000;
+	startEvents: click;
+	"
+	></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"
+	animation="
+	property: position;
+	from: 1 0.75 -3;
+	to: 1 -100 -3;
+	dur: 5000;
+	startEvents: click;
+	"
+	></a-cylinder>
+      <a-plane src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/bricks/brick_bump.jpg" position="0 0 -4" rotation="-90 0 0" width="4" height="4" 
+	animation="
+	property: position;
+	from: 0 0 -4;
+	to: 0 0 -7;
+	dur: 1000;
+	loop: true;
+	"
+	></a-plane>
+      <a-sky src="https://images.pexels.com/photos/1154503/pexels-photo-1154503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+  </a-sky>
+    </a-scene>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+<a-camera>
+<a-cursor></a-cursor>
+</a-camera>
+
+      <a-box src="https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg?cs=srgb&dl=pexels-fwstudio-164005.jpg&fm=jpg" position="-1 0.5 -3" rotation="0 45 0"animation="
+property: rotation;
+from: 0,0,0;
+to: 180,0,0;
+loop: true;
+dir: alternate;
+startEvents: click;
+"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25"animation="
+property: radius;
+from: 2;
+to: .75;
+dur: 2000;
+startEvents: click;
+"></a-sphere>
+      <a-cylinder src="https://t4.ftcdn.net/jpg/02/42/03/25/360_F_242032542_DMW2J5F2t1P2mTOF3xRpxpOUwqSueGuh.jpg" position="1 0.75 -3" radius="0.5" height="1.5"animation="
+property: rotation;
+from: 0,0,0;
+to: 180,0,0;
+loop: true;
+dir: alternate;
+startEvents: click;
+"></a-cylinder>
+      <a-plane src="https://media.istockphoto.com/id/182890894/photo/sunrise.jpg?s=612x612&w=0&k=20&c=9_jIvAFIvCHag3sbAZ8hCaeNf8XgPo8gpo8MdB5xyb8"position="0 0 -4" rotation="-90 0 0" width="4" height="4"></a-plane>
+      <a-sky src="https://images.pexels.com/photos/7919/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+"></a-sky>
+
+    </a-scene>
+  </body>
+</html>

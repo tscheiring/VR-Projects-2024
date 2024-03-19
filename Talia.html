@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+<a-camera>
+<a-cursor><a-cursor>
+</a-camera>
+    <a-sky src="https://images.pexels.com/photos/141784/pexels-photo-141784.jpeg">
+</a-sky>
+      <a-box src="https://cdn.shopify.com/s/files/1/1918/9937/files/Surface-Red-Texture-Fabric-Timeless-Treasures.jpg?v=1683660442" position="-1 0.5 -3" rotation="0 45 0"
+	animation ="
+	property: rotation;
+	from: 0 15 0;
+	to: 0 15 360;
+	dur: 6000;
+	loop: true;
+	startEvents: click;
+	"
+	
+	></a-box>
+      <a-sphere src="https://t3.ftcdn.net/jpg/05/24/20/54/360_F_524205460_KLLGTs24DebMIgTgY7dFFxMW2UDbCwpD.jpg" position="0 1.25 -5" radius="1.25" 
+	animation ="
+	property: position;
+	from: 0 1.25 -5;
+	to: -26 25 -45;
+	dur: 5000;
+	loop: true;
+	startEvents: click;
+	"
+	></a-sphere>
+      <a-cylinder src="https://t3.ftcdn.net/jpg/04/69/28/58/360_F_469285845_ganfZEVY388wcbAn005zqC72v3p9aCVR.jpg" position="1 0.75 -3" radius="0.5" height="1.5" 
+	animation ="
+	property: position;
+	from: 1 0.75 -3;
+	to: 1 -100 -3;
+	dur: 6000;
+	loop: true;
+	startEvents: click;
+	"
+	></a-cylinder>
+      <a-plane src="https://live.staticflickr.com/3612/3684161034_210c09b6fa_b.jpg" position="0 0 -4" rotation="-90 0 0" width="4" height="4"
+	
+	
+	 ></a-plane>
+
+	<a-torus color = "red" radius-tubular="1.5" radius="10" position="-26 25 -45"
+		animation ="
+		property: rotation;
+		from: 0 15 0;
+		to: 0 15 360;
+		dur: 5000;
+		loop: true;
+		startEvents: click;
+		"
+		></a-torus>
+	
+
+	
+    </a-scene>
+  </body>
+</html>
+
+

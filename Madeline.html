@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+<a-camera>
+<a-cursor></a-cursor>
+</a-camera>
+
+      <a-box src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/decal/decal-normal.jpg" position="-1 0.5 -3" rotation="0 45 0"
+animation="
+            property: position;
+               from: 0 0 0;
+               to: 180 0 0;
+               dur: 6000;
+             loop:true;
+	startEvents: click;
+"
+>
+
+</a-box>
+      <a-sphere  src="https://img.freepik.com/free-photo/beautiful-detailed-macro-leaf_23-2148780493.jpg?w=1060&t=st=1709660436~exp=1709661036~hmac=34f0b43a3846896b5d35134075b3df1ac26bd42e483d441cab184f9a53dd2516" position="0 1.25 -5" radius="1.25" 
+ animation="
+         property: radius; 
+         from: 2; 
+         to: .5; 
+         dur: 2000; 
+         startEvents: click; "
+></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"
+animation="
+               property: rotation;
+               from: 0 0 0;
+               to: 180 0 0;
+               dur: 6000;
+             loop:true;
+	startEvents: click;
+"
+>
+       
+</a-cylinder>
+      <a-plane src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/bricks/brick_bump.jpg" position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+       <a-torus color="limegreen" radius-tubular="2" radius="25" position="-26 25 -45"
+               animation="
+               property: rotation;
+               from: 0 15 0;
+               to: 0 15 360;
+               dur: 6000;
+             Loop:true;
+             
+  "></a-torus>
+
+      <a-sky src="https://images.pexels.com/photos/1154503/pexels-photo-1154503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></a-sky>
+    </a-scene>
+  </body>
+</html>

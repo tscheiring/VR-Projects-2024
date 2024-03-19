@@ -1,0 +1,65 @@
+<html>
+<head>
+<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></
+script>
+</head>
+<body>
+<a-scene>
+<a-camera>
+<a-cursor></a-cursor>
+</a-camera>
+<a-box position="-1 0.5 -3" rotation="0 45 0" src="https://
+images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?
+auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+animation="
+property: position;
+from: -1 0.5 -3;
+to: 0 20 -30;
+dur: 3000;
+loop: true;
+"
+></a-box>
+<a-sphere position="0 1.25 -5" radius="1.50" src="https://
+images.pexels.com/photos/1426718/pexels-photo-1426718.jpeg?
+auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+animation="
+property: position;
+from: 0 20 -30;
+to: 0 -4 -30;
+dur: 3000;
+loop: true;
+"
+></a-sphere>
+<a-cylinder position="1 0.75 -3" radius="0.5" height="1.5"
+color="coral" ></a-cylinder>
+animation="
+property: radius;
+from: 2;
+to: .5;
+dur: 2000;
+startEvents: click;
+"></a-sphere>
+<a-plane position="0 0 -4" rotation="-90 0 0" width="4"
+
+height="4" src="https://images.pexels.com/photos/3894157/pexels-
+photo-3894157.jpeg"></a-plane>
+
+<a-torus color = "blue" radius-tubular="2" radius="25"
+position="-26 25 -45"
+animation="
+property: rotation;
+
+from: 0 20 -30;
+to: 0 15 360;
+dur: 6600;
+loop: true;
+"
+></a-torus>
+
+<a-sky src="https://images.pexels.com/photos/1043941/pexels-
+photo-1043941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></a-
+sky>
+
+</a-scene>
+</body>
+</html>

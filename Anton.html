@@ -1,0 +1,63 @@
+x<html>
+ <head>
+   <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+ </head>
+ <body>
+   <a-scene>
+
+<a-camera>
+<a-cursor></a-cursor>
+</a-camera>
+
+     <a-box src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/decal/decal-normal.jpg" position="-1 0.5 -3" rotation="0 45 0"
+             animation="
+             property: position;
+             from: -1 0.5 -3;
+             to: -90 -80 -30
+             dur: 8000;
+             loop: true;
+             "
+></a-box>
+
+     <a-sphere position="0 1.25 -5" radius="1.25" color="#red"
+             animation="
+             property: position;
+             from: 0 1.25 -5;
+             to: 0 -5 -5;
+             dur: 4000;
+             startEvents: click;
+"></a-sphere>
+
+     <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="blue"
+             animation="
+             property: rotation;
+             from: 1 0.75 -3;
+             to: 90 -4 5;
+             dur: 1000;
+             startEvents: click;
+"></a-cylinder>
+
+     <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/noise/perlin-512.png"
+             animation="
+             property: position;
+             from: 0 0 -4;
+             to: -26 28 -45:
+             dur: 8000;
+             loop: true;
+             startEvents: click;
+"></a-plane>
+
+     <a-torus color="orange" radius-tubular="2" radius="25" position="-26 25 -45"
+	      animation="
+             property: rotation;
+             from: 0 15 0;
+             to: 0 15 360;
+             dur: 9000;
+             loop: true;
+"></a-torus>
+
+     <a-sky src="https://images.pexels.com/photos/301489/pexels-photo-301489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+ </a-sky>
+   </a-scene>
+ </body>
+</html>

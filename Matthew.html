@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+<a-camera>
+<a-cursor></a-cursor>
+</a-camera>
+
+      <a-box src="https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGYtczEyNC1hay01MzQ3XzMuanBn.jpg" position="-1 0.5 -3" rotation="0 45 0" 
+animation="
+property: rotation;
+from: 0 45 0;
+to: 0 225 0;
+loop: true;">
+</a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"
+animation="
+property: position;
+from: 0 5 -5;
+to: 0 1.25 -5;
+loop: true;">
+</a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"
+animation="
+property: rotation;
+from: 1 0.75 -3;
+to: 1 0.75 12;
+loop: true;
+dur: 2200;">
+</a-cylinder>
+      <a-plane src="https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHg4NzQ5MDktaW1hZ2Uta3d2eGJ3eXQuanBn.jpg" position="0 0 -4" rotation="-90 0 0" width="4" height="4" ></a-plane>
+      <a-sky src="https://images.pexels.com/photos/1205301/pexels-photo-1205301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+</a-sky>
+    </a-scene>
+  </body>
+</html>
